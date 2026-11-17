@@ -2,6 +2,8 @@
 
 Tested with eve 1.0.2 (also present in 1.0.1), Node 24, pnpm 10.
 
+Issue: https://github.com/vercel/eve/issues/6554
+
 Listing a package in `build.externalDependencies` (here `sharp`) makes eve bundle (inline) every
 installed package that has that name anywhere in its dependency closure, including as an
 `optionalDependencies` entry. `next` lists `sharp` as an optional dependency, so `next` is inlined
